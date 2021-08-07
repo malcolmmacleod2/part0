@@ -1,0 +1,13 @@
+note over browser:
+user enters data in the form field
+user clicks on submit
+end note 
+
+browser->server: HTTP POST https://studies.cs.helsinki.fi/exampleapp/new_note_spa
+server-->browser: {"message":"note created"}
+
+note over browser:
+Browser executes the event handler
+that renders response from server.
+Note added to notes.
+end note 
